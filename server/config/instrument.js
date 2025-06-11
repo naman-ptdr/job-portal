@@ -1,9 +1,10 @@
 import * as Sentry from "@sentry/node";
 import { nodeProfilingIntegration } from "@sentry/profiling-node";
 
+
 // Ensure to call this before importing any other modules!
 Sentry.init({
-  dsn: "https://0aa83b2913e8c498750c869919a600d4@o4509468264366080.ingest.us.sentry.io/4509468270788608",
+  dsn: "https://50882e46e8f7eeb0a0538acca2bbd012@o4509468264366080.ingest.us.sentry.io/4509479572406273",
 
   // Adds request headers and IP for users, for more info visit:
   // https://docs.sentry.io/platforms/javascript/guides/node/configuration/options/#sendDefaultPii
@@ -12,7 +13,7 @@ Sentry.init({
   integrations: [
     // Add our Profiling integration
     nodeProfilingIntegration(),
-    Sentry.mongoIntegration()
+    Sentry.mongooseIntegration()
   ],
 
   // Set tracesSampleRate to 1.0 to capture 100%
@@ -20,7 +21,7 @@ Sentry.init({
   // We recommend adjusting this value in production
   // Learn more at
   // https://docs.sentry.io/platforms/javascript/guides/node/configuration/options/#tracesSampleRate
-//   tracesSampleRate: 1.0,
+  // tracesSampleRate: 1.0,
 
   // Set profilesSampleRate to 1.0 to profile 100%
   // of sampled transactions.
