@@ -14,7 +14,7 @@
   "dependencies": {
     "@sentry/node": "^9.28.1",
     "@sentry/profiling-node": "^9.28.1",
-    "bcrpyt": "^2.0.0",
+    "bcrypt": "^6.0.0",
     "cloudinary": "^2.6.1",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
